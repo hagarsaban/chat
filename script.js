@@ -1,8 +1,16 @@
+const class_list = document.getElementById('grid').classList;
+function show_grid() {
+    window.addEventListener("scroll", hide_grid, false);
+    class_list.remove('hidden');
+}
+function hide_grid() {
+    class_list.add('hidden');
+}
 function toggle_grid() {
-    var class_list = document.getElementById('grid').classList;
     if (class_list.contains('hidden')) {
-        class_list.remove('hidden')
+        show_grid();
     } else {
-        class_list.add('hidden');
-    };
+        hide_grid();
+    }
 };
+
