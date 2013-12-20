@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Yaw</title>
+        <title>Crystal</title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
@@ -24,9 +24,15 @@
         
         <div id="sticky">
             <div class="shrink flex-center">
-                <button onclick="toggle_grid()"><i class="fa fa-th"></i></button>
-                <button id="title">YAW</button>
-                <button onclick="alert('ping')"><i class="fa fa-bell-o"></i></button>
+                <button onclick="toggle_grid()">
+                    <i class="fa fa-th"></i>
+                </button>
+                <button id="title">Crystal</button>
+                <button onclick="notification()">
+                    <i class="fa fa-bell-o">
+                        <div id="notification-count">4</div>
+                    </i>
+                </button>
             </div>
         </div>
         <div id="content" class="shrink">
