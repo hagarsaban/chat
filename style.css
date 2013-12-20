@@ -1,3 +1,125 @@
-body {
-    font-family: sans-serif;
+:root {
+    overflow-x: hidden;
 }
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+#sticky {
+    position: fixed;
+    height: 35px;
+    z-index: 1;
+    top: 0; 
+    left: 0; right: 0;
+    
+    background-color: #0cb272;
+    color: #eee;
+}
+
+button {
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    outline: none;
+}
+
+#title {
+    flex-grow: 1;
+    -webkit-flex-grow: 1;
+    text-align: left;
+}
+
+#sticky button {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.shrink {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.flex-center {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+#tiles {
+    position: fixed;
+    z-index: 2;
+    top: 64px;
+    
+    background-color: #eeeeee;
+    padding: 10px;
+    border-radius: 5px;
+    
+    opacity: inherit;
+    
+}
+
+#tiles i.fa {
+    font-size: 2rem;
+}
+
+#tiles button {
+    
+}
+
+#tiles:before {
+    bottom: 100%;
+	left: 10%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: #eeeeee;
+	border-width: 20px;
+	margin-left: -20px;
+}
+
+
+
+
+#content {
+    margin-top: 35px;
+}
+
+
+
+#grid {
+    transition: all 0.3s linear;
+    opacity: 1;
+}
+
+#grid.hidden {
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
